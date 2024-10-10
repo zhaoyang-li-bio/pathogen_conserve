@@ -1,7 +1,10 @@
 """使用biopython的entrez模块下载基因组序列
     日期：20240729
     作者：李朝阳
+    思路：从db库genome搜索，得到对应的id,
+        使用efetch进行下载，到对应的文件夹。
 """
+
 from Bio import Entrez,SeqIO
 from tqdm import  tqdm
 import os
