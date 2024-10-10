@@ -71,12 +71,14 @@ def main():
     # 查找序列id
     id_list = seq.query_info(mindate="2014/01/01",maxdate="2024/06/01")
 
-    #下载序列
-    seq.efetch_info(id_list=id_list,out_file="Cronobacter_dublinensis.fasta")
-    # 创建库名
-    # seq.mkdb(db_name="Cronobacter_sakazakii")
-    #构建序列库
-    # seq.makedb(file="Cronobacter_sakazakii.fasta",db_name="Cronobacter_sakazakii")
+    print(id_list)
+
+    # #下载序列
+    # seq.efetch_info(id_list=id_list,out_file="Cronobacter_dublinensis.fasta")
+    # # 创建库名
+    # # seq.mkdb(db_name="Cronobacter_sakazakii")
+    # #构建序列库
+    # # seq.makedb(file="Cronobacter_sakazakii.fasta",db_name="Cronobacter_sakazakii")
 
 if __name__ == '__main__':
     main()

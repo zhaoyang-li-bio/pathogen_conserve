@@ -1,0 +1,24 @@
+hsp
+hsp:['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__',
+'__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__',
+'__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__',
+'__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__',
+'__weakref__', 'align_length', 'bits', 'expect', 'frame', 'gaps', 'identities', 'match', 'num_alignments',
+'positives', 'query', 'query_end', 'query_start', 'sbjct', 'sbjct_end', 'sbjct_start', 'score', 'strand']
+aligment
+hsp:['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__',
+ '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__',
+ '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__',
+ '__subclasshook__', '__weakref__', 'accession', 'hit_def', 'hit_id', 'hsps', 'length', 'title']
+
+searchIO:
+record path:
+'absorb', 'append', 'blast_id', 'description', 'fragments', 'hit_filter', 'hit_keys', 'hit_map', 'hits', 'hsp_filter',
+'hsp_map', 'hsps', 'id', 'index', 'items', 'iterhit_keys', 'iterhits', 'iteritems', 'param_evalue_threshold', 'param_filter',
+ 'param_gap_extend', 'param_gap_open', 'param_score_match', 'param_score_mismatch', 'pop', 'program', 'reference', 'seq_len',
+  'sort', 'stat_db_len', 'stat_db_num', 'stat_eff_space', 'stat_entropy', 'stat_hsp_len', 'stat_kappa', 'stat_lambda',
+  'target', 'version
+
+about path for hit:
+'accession', 'append', 'attributes', 'blast_id', 'dbxrefs', 'description', 'description_all', 'filter', 'fragments',
+'hsps', 'id', 'id_all', 'index', 'map', 'pop', 'query_description', 'query_id', 'seq_len', 'sort'
