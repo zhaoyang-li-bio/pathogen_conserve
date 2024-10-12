@@ -24,10 +24,6 @@ class FastalKit:
         for record in self.records:
             for option in options:
                 if option in record.description:
-                    
-         
-
-        
 
 def main():
     #提取想要的序列

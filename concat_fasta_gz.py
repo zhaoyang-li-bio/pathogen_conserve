@@ -17,7 +17,7 @@ def get_seq_path(f_path):
     return path_l
                             
 def main():
-    path = r'F:\data\Enterobacteria\Cronobacter_malonaticus'
+    path = r'F:\01data\Klebsiella\Klebsiella pneumoniae\ncbi_dataset\ncbi_dataset\data'
     #合并文件
     seq_paths = get_seq_path(f_path=path)
 

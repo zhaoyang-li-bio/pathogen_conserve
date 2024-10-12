@@ -56,17 +56,19 @@ def main():
     elif option == "1" :
         paths = input("输入要合并主要的文件夹：")
         type = input("输入的文件合并类型（fna/gz）:")
+        file_path = []
         for path in os.listdir(paths):
             # 合并文件
             path = os.path.join(paths,path)
             if os.path.isdir(path):
                 seq_paths = get_seq_path(f_path=path)
+                file_path.append(seq_paths[0])
                 #确认名字与解压文件一致
                 file_name_list = path.split("\\")
                 file_name = file_name_list[-1]
 
-                out_file = os.path.join(paths,file_name)
-                concat_seq(seq_paths=seq_paths, out_path=out_file, type=type)
+    out_file = os.path.join(paths,"concat")
+    concat_seq(seq_paths=file_path, out_path=out_file, type=type)
 
 if __name__ == '__main__':
     main()
